@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Suez+One&family=Yellowtail&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     outline: 0;
+     box-sizing: border-box;
+}
+
+ul,
+ol {
+     list-style: none;
+}
+
+a {
+     display: inline-block;
+     text-decoration: none;
+}
+
+img {
+     width: 100%;
+     max-width: 100%;
+     vertical-align: middle;
+}
+
+.clear {
+     clear: both;
+}
+
+.container {
+     width: 1140px;
+     margin: 0 auto;
+}
+
+#menu_bar {
+     width: 100%;
+     height: 100px;
+     background-color: #191e21;
+     border-bottom: 1px solid #FF9600;
+
+}
+
+.main_row {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+}
+
+.col_log_text {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     line-height: 100px;
+
+}
+
+.col_log img {
+     width: 70px;
+     border-radius: 50%;
+     border: 3.5px solid #FF9600;
+}
+
+
+.col_text h3 a {
+     color: white;
+     font-family: 'Roboto', sans-serif;
+     letter-spacing: 1.5px;
+     font-size: 14px;
+}
+
+.main_manu ul {
+     display: inline-flex;
+}
+
+.main_manu ul li {
+     width: 100px;
+     margin-left: 30px;
+     text-align: center;
+
+}
+
+.main_manu ul li a {
+     color: white;
+     font-size: 16px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 500;
+     text-transform: uppercase;
+     padding: 10px 20px;
+     border: 1.3px solid #191e21;
+     transition: all linear .3s;
+}
+
+
+.main_manu ul li a:hover {
+     color: #FF9600;
+     border: 1.3px solid #FF9600;
+     border-radius: 7px;
+     box-shadow: 0px 3px 20px #FF9600;
+
+}
+
+#display {
+     padding-top: 50px;
+     padding-bottom: 50px;
+     background-color: #191e21;
+}
+
+.display_row {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+
+.display_row .main_image img {
+     width: 250px;
+     border-radius: 5px;
+}
+
+.main_image {
+     box-shadow: 0px 2px 10px #FF9600;
+}
+
+.intruduction {
+     margin-right:50px;
+     margin-bottom: 30px;
+}
+
+.head_text h1 {
+     font-size: 52px;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 700;
+     color: #FF9600;
+}
+
+.head_text h2{
+     color: #ffffff;
+     font-family: 'Roboto', sans-serif;
+     margin-left: 66.5px;
+     font-weight: 700;
+     font-size: 45px;
+}
+
+.social_media p {
+     width: 610px;
+     font-size: 17px;
+     font-weight: 300;
+     color: #ffffff;
+     margin-top: 25px;
+     line-height: 30px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.social{
+     width: 500px;
+     margin-top: 20px;
+}
+
+.social ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  
+}
+
+.social ul li a{
+     font-size: 30px;
+     color: #ffffff;
+     transition: all linear .3s;
+ }
+
+ .social ul li a:hover{
+     color: #FF9600;
+     transform: translateY(-5px);
+ }
+
+ .button{
+     width: 490px;
+     margin-top: 50px;
+     text-align: center;
+ }
+
+ .button a{
+     font-size: 18px;
+     font-weight: 500;
+     font-family: 'Roboto', sans-serif;
+     padding: 17px 60px;
+     color: #FF9600;
+     border: 2px solid #FF9600;
+     background-color: #FF9600;
+     z-index: 1;
+     position: relative;
+     transition: all linear .6s;
+ }
+
+ .button a:hover{
+    color: #ffffff;
+ }
+
+ .button a::after{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191e21;
+    z-index: -1;
+    border-radius: 8px;
+    position: absolute;
+    transition: transform .6s ease;
+    transform-origin: left;
+    transform: scaleX(1);
+ }
+
+ .button a:hover:after{
+     transition: transform .6s ease;
+     transform-origin: right;
+     transform: scaleX(0);
+ }
+
+
+
+@media screen and (max-width: 502px) {
+     
+     .container {
+          width: 100%;
+     }
+
+     #menu_bar {
+          width: 100%;
+     
+     }
+
+     .col_log_text {
+          
+          gap: 8px;
+     }
+
+     
+    .col_text h3 a {
+     letter-spacing: 1.2px;
+     font-size: 12px;
+     }
+     
+     .col_log img {
+          width: 50px;
+     }
+     .main_row {
+          width: 100%;
+          flex-direction: column;
+     }
+
+     .main_manu{
+          margin-left: 27px;
+     }
+     .main_manu ul{
+          margin-top: 10px;
+     }
+
+     .main_manu ul li {
+         margin-left: -30px;
+     }
+
+     .main_manu ul li a {
+          font-size: 10px;
+          padding: 5px 10px; 
+     }
+
+     #display {
+          padding-top: 80px;
+          padding-bottom: 70px;
+  
+     }
+     
+     .display_row {
+         flex-direction: column;
+    
+     }
+     .display_row .main_image {
+          width: 200px;
+     }
+
+     .intruduction {
+        margin-top: 20px;
+     }
+     
+     .head_text h1 {
+          font-size: 30px;
+          text-align: center;
+          margin-left: 27px;
+     }
+
+     .head_text h2{
+          font-size: 23px;
+          text-align: center;
+          margin-right: 69px;
+     }
+
+     .social_media p {
+          width: 60%;
+          font-size: 11px;
+          margin-top: 15px;
+          line-height: 20px;
+          margin-left: 140px;
+         
+     }
+     
+     .social{
+          margin-top: 25px;
+     }
+     
+     .social ul{
+         display: flex;
+         justify-content: center;
+         margin-left: 50px;
+         gap: 20px;
+       
+     }
+     
+     .social ul li a{
+          font-size: 25px;
+      }
+      .button{
+          width: 100%;
+          margin-top: 22px;
+          margin-left: 20px;
+          
+      }
+     
+      .button a{
+          font-size: 18px;
+          padding: 17px 60px;
+       
+      }
+
+}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'IBM Plex Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
